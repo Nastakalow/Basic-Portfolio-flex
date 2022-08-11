@@ -1,0 +1,186 @@
+body{
+    height: 100vh;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    color: #777;
+    background-image: url(../images/concrete_seamless.png);
+}
+
+h1, h2, h3 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: 700;
+    color: #4aaaa5;
+    margin-bottom: 30px;
+}
+
+.container{
+    height: 100%;
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    gap: 30px;
+}
+
+.main-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 100%;
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+}
+
+.main-menu .logo{
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    background-color: #4aaaa5;
+    color: #fff;
+    text-align: center;
+    padding: 0 50px;
+}
+
+/* dersde elediyimiz tapshriqda, sen main-menu ile (left-side ve right-side) - in hundurluklerini ne ile deyishdin */
+
+.main-menu nav a{
+    color: #999;
+    margin-right: 10px;
+}
+
+.main-menu nav a::after{
+    content: "|";
+    margin-left: 10px;
+}
+
+.main-menu nav a:last-child::after{
+    content: "";
+}
+
+.left-side{
+    flex: 5;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+}
+
+.left-side h2{
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #ddd;
+}
+
+.left-side img{
+    float: left;
+    margin-right: 20px;
+}
+
+.left-side p{
+    /* float: left; */
+    width: 100%;
+}
+
+.right-side{
+    background-color: #fff;
+    flex: 2;
+    border: 1px solid #ddd;
+    padding: 30px;
+    height: fit-content;
+    text-align: center;
+}
+
+.right-side h2{
+    font-size: 22px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+    border-bottom: 2px solid #eee;
+}
+
+.right-side img{
+    width: 62px;
+    height: 62px;
+}
+
+/* ABOUTME END */
+
+
+
+/* PORTFOLIO START */
+
+.left-side .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.left-side .gallery-main, .left-side .gallery-main img{
+    position: relative;
+    width: 274px;
+}
+
+.left-side .gallery-main img{
+    opacity: .8;
+}
+
+.left-side .gallery-main h3{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+    font-size: 22px;
+}
+
+/* PORTFOLIO END */
+
+
+
+/* CONTACT START */
+
+input, textarea{
+    width: 100%;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+button{
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background: #4aaaa5;
+    border: 0 none;
+}
+
+/* CONTACT END */
+
+
+
+/* FOOTER START */
+
+footer{
+    padding: 30px 0;
+    font-size: 12px;
+    clear: both;
+    color: #ccc;
+    text-align: center;
+    background: #666;
+    border-top: 8px solid #4aaaa5;
+    margin-top: 30px;
+}
+
+/* FOOTER END */
